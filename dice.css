@@ -1,0 +1,56 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+button {
+  width: 150px;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgb(15, 117, 234);
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+}
+ul {
+  font-size: 40px;
+  list-style-type: none;
+  max-width: 600px;
+  padding: 0;
+  margin: 10px auto;
+}
+li {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.8);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li span {
+  margin-right: 10px;
+  font-size: 50px;
+}
+#diceEl {
+  font-size: 150px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.roll_animation {
+  animation-name: roll;
+}
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
